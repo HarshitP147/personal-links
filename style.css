@@ -1,0 +1,65 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+    min-height: 100%;
+    min-width: 100%;
+}
+
+body {
+    user-select: none;
+    position: relative;
+}
+
+.blue-theme {
+    background-image: linear-gradient(to bottom left, #2af598, #009efd);
+}
+
+.red-theme {
+    background-image: linear-gradient(to top right, #d4145a, #fbb03b);
+}
+
+@keyframes red-to-blue {
+    0% {
+        background-image: linear-gradient(to top right, #d4145a, #fbb03b);
+    }
+    100% {
+        background-image: linear-gradient(to bottom left, #2af598, #009efd);
+    }
+}
+
+@keyframes blue-to-red {
+    0% {
+        background-image: linear-gradient(to bottom left, #2af598, #009efd);
+    }
+    100% {
+        background-image: linear-gradient(to top right, #d4145a, #fbb03b);
+    }
+}
+
+#modal-root {
+    background-color: rgba(0, 0, 0, 0.738);
+}
+
+@keyframes background-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes background-out {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+.links {
+    @apply w-[77.5%] mx-auto py-2.5 transition-all shadow-xl rounded-lg hover:scale-[1.02] cursor-pointer;
+}
