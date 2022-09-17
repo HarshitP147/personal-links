@@ -7,11 +7,6 @@ html {
     min-width: 100%;
 }
 
-body {
-    user-select: none;
-    position: relative;
-}
-
 .blue-theme {
     background-image: linear-gradient(to bottom left, #2af598, #009efd);
 }
