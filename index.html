@@ -2,22 +2,27 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image" href="#" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="theme-color" content="#000000">
-    <link rel="stylesheet" href="./style.css" />
-    <script src="./script.ts" defer type="module"></script>
-    <title>Harshit Pandit's Links</title>
+
+    <link rel="icon" type="image" href="#" />
+    <link rel="stylesheet" href="./src/style.css">
+    <script src="./src/main.ts" defer type="module"></script>
+    <title>Harshit's Personal links</title>
 </head>
 
-<body class="blue-theme relative" style="user-select: none" s>
+<body class="relative select-none">
+
+    <!-- <div id="mouse" class="h-4 w-4 bg-red-500 absolute z-10 top-0 left-0"></div> -->
+
     <div id="modal-root" style="background-color: rgba(0, 0, 0, 0.738)" class="fixed hidden w-[100%] h-[100%] z-10">
         <div id="modal-box" class="flex justify-center align-middle relative rounded-lg mx-auto">
-            <div class="absolute top-32 mx-12 w-[75%] h-64 bg-white rounded-2xl overflow-scroll">
+            <div class="absolute top-32 mx-12 w-[65%] bg-white rounded-lg overflow-scroll">
                 <div
                     class="text-justify text-xs md:text-sm lg:text-base py-3 mx-8 flex justify-center flex-col align-middle">
-                    <p class="my-1">
+                    <!-- <p class="my-1">
                         Hi! I'm Harshit, and currently I'm 19 years old as a
                         college student studying Computer Engineering. I like to code, sleep, listen
                         to music and would like to try out and learn
@@ -28,53 +33,46 @@
                         fan of Eminem too 🤘.
                     </p>
                     <p class="my-1">
-                        Yes I could've made my link website using linktree
-                        or any other platform but you're skilled enough to
-                        make it yourself even better🔥, then why not?? I'm
-                        aiming to be full stack engineer and mobile app
-                        developer. I could've done other fields like Artificial
-                        Intelligence and others too but currently I found this 
-                        the easiest way to get into tech.
-                    </p>
-                    <p class="my-1">
                         I have shared most of my social media links, it's
                         just like linktree but 'self-made' and 'customized'.
-                        If you read this much then please do checkout the
+                        If you have read this much then please do checkout the
                         projects I have made and do not forget to connect on
                         social media ! Thank you ✨.
+                    </p> -->
+                    <p class="my-1">
+                        This site is still 'under construction' 😄! I'm Harshit Pandit, a computer engineering student
+                        and I made this website myself. Come back soon when I more about myself !!
                     </p>
-                    <button id="close-btn"
-                        class="my-2 border border-red-600 text-red-600 rounded-lg transition-all hover:bg-red-600 hover:text-white w-fit mx-auto py-2 px-3">
-                        Close
-                    </button>
-                    <span class="text-xs">PS: The toggling of gradient isn't really much,
-                        it's just there :P</span>
+                    <p class="my-1">
+                        Meanwhile you can checkout my links provided and connect with me on social media !!
+                    </p>
+                    <button id="close-btn"> Close </button>
                 </div>
             </div>
         </div>
     </div>
 
-    <div id="app-root">
-        <div class="py-14">
-            <div class="mx-auto p-6 w-fit text-white shadow-teal-600 scale-90 md:scale-100">
-                <div id="name-box"
-                    class="w-fit py-3 px-14 rounded-xl shadow mx-auto flex flex-col sm:flex-row justify-center align-baseline cursor-pointer hover:shadow-xl"
-                    style="transition: all ease 500ms">
-                    <img src="./Harshit.jpg" alt="Self" class="h-24 w-24 rounded-full object-fill mx-auto" />
-                    <div class="flex flex-col justify-center ml-4 text-center">
-                        <h2 class="text-3xl">Harshit Pandit</h2>
-                        <h5 class="text-md">Computer Science Student</h5>
-                        <span class="text-xs">Click to know more about me!!</span>
-                    </div>
+
+    <div id="app-root" class="absolute w-full top-0 left-0">
+        <div id="blue-theme" class="blue-theme">
+        </div>
+        <div id="red-theme" class="red-theme">
+        </div>
+
+        <div class="mx-auto p-6 w-fit text-white shadow-teal-600 scale-90 md:scale-100">
+            <div id="name-box"
+                class="w-fit py-3 px-14 rounded-xl shadow mx-auto flex flex-col sm:flex-row justify-center align-baseline cursor-none hover:shadow-xl"
+                style="transition: all ease 500ms">
+                <img src="./Harshit.png" alt="Self" class="h-24 w-24 rounded-full object-fill mx-auto" />
+                <div class="flex flex-col justify-center ml-4 text-center">
+                    <h2 class="text-3xl">Harshit Pandit</h2>
+                    <h5 class="text-md">Computer Science Student</h5>
+                    <span class="text-xs">Click to know more about me!!</span>
                 </div>
-                <button id="toggle-btn" class="w-full mt-5 p-2 flex flex-col rounded-lg transition-shadow hover:shadow-2xl">
-                    Toggle gradient to red
-                    <span class="text-xs">Themes will change. Updates under development</span>
-                </button>
             </div>
         </div>
 
-        <div class="mx-auto -mt-6 pb-14">
+        <div class="mx-auto -mt-6 py-14">
             <ul class="space-y-8 text-center text-lg">
                 <li class="links bg-white border">
                     <a href="mailto:harshit7757@gmail.com" target="_blank" class="focus:border-none focus:outline-none">
@@ -164,11 +162,18 @@
                     </a>
                 </li>
 
-                <li class="links bg-white">
-                    Reddit link will come here
+                <li class="links" style="background-color:#ff4500;">
+                    <a href="https://www.reddit.com/user/harshit_147" target="_blank"
+                        class="focus:outline-none focus:border-none">
+                        <div class="text-center flex justify-center align-middle">
+                            <img src="./reddit.png" style="height:28px;width:28px;scale: 1.4;" />
+                            <span class="ml-3 text-white"> Reddit </span>
+                        </div>
+                    </a>
                 </li>
             </ul>
         </div>
+
     </div>
 </body>
 
