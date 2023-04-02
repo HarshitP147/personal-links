@@ -24,7 +24,7 @@ window.addEventListener("click",() => {
     }
 });
 
-nameBox.addEventListener("click",(e)=>{
+nameBox.addEventListener("click",()=>{
     modal.style.animation = "background-in 0.5s";
     modal.classList.remove("hidden");
 });
@@ -37,12 +37,12 @@ closeBtn.addEventListener("click",() =>{
 })
 
 
-window.addEventListener("mousemove",e => {
-    anime({
-        targets:mouse,
-        translateX:e.clientX || e.pageX,
-        translateY:e.clientY || e.pageY ,
-        elasticity:10,
-        duration:650
-    })
-})
+// window.addEventListener("mousemove",e => {
+//     anime({
+//         targets:mouse,
+//         translateX:e.clientX || e.pageX,
+//         translateY:e.clientY || e.pageY ,
+//         elasticity:10,
+//         duration:650
+//     })
+// })
