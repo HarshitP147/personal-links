@@ -5,6 +5,7 @@
 html {
     min-height: 100%;
     min-width: 100%;
+    cursor: none;
 }
 
 a {
@@ -22,7 +23,8 @@ a {
 
 }
 
-.red-theme,.blue-theme{
+.red-theme,
+.blue-theme {
     transition: opacity 750ms cubic-bezier(0.000, 0.5, 0.500, 1);
     @apply absolute h-full w-full -z-20
 }
@@ -47,10 +49,18 @@ a {
     }
 }
 
-#close-btn{
-    @apply text-white bg-red-600 w-fit mx-auto px-3 py-2 mt-1 rounded-md transition-colors hover:bg-red-500
+#close-btn {
+    @apply text-white bg-red-600 w-fit mx-auto px-3 py-2 mt-1 rounded-md transition-colors hover:bg-red-500 cursor-none
 }
 
 .links {
     @apply w-[77.5%] mx-auto py-2.5 transition-all shadow-xl rounded-lg hover:scale-[1.02] cursor-none z-30;
+}
+
+#mouse {
+    @apply h-6 w-6 rounded-full absolute z-50 top-0 left-0 cursor-none shadow-md shadow-gray-500 transition-colors
+}
+
+.hover{
+    @apply h-7 w-7 bg-red-500 shadow-red-400
 }
