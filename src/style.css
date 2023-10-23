@@ -58,7 +58,7 @@ a {
 }
 
 #mouse {
-    @apply h-6 w-6 rounded-full absolute z-50 top-0 left-0 cursor-none shadow-md shadow-gray-500 transition-colors
+	@apply h-6 w-6 rounded-full absolute z-50 top-0 left-0 cursor-none shadow-md shadow-gray-500 transition-colors bg-black
 }
 
 .hover{
