@@ -34,15 +34,6 @@ closeBtn.addEventListener("click", () => {
     }, 490)
 })
 
-document.addEventListener('mousemove', e => {
-    mouse.style.transform = `transform3d(calc(${e.clientX}px-50%),calc(${e.clientY}px-50%))`
-})
-
-document.addEventListener('mousemove', function (e) {
-    mouse.style.left = e.clientX + 'px';
-    mouse.style.top = e.clientY + 'px';
-});
-
 
 document.querySelectorAll('.links').forEach(item => {
     item.addEventListener('mouseover', () => {
