@@ -45,7 +45,7 @@ html {
 }
 
 #close-btn {
-    @apply text-white bg-red-600 w-fit mx-auto px-3 py-2 mt-1 rounded-md transition-colors hover:bg-red-500 
+    @apply text-white bg-red-700 w-fit mx-auto px-3 py-2 mt-1 rounded-md transition-colors hover:bg-red-600
 }
 
 .links {
