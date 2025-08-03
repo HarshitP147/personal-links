@@ -10,17 +10,21 @@ redTheme.style.opacity = '0';
 
 let isBluetheme = true;
 
-window.addEventListener("click", () => {
-    isBluetheme = !isBluetheme;
-    if (isBluetheme) {
-        blueTheme.style.opacity = '1';
-        redTheme.style.opacity = '0'
-    }
-    else {
-        blueTheme.style.opacity = '0'
-        redTheme.style.opacity = '1'
-    }
-});
+window.addEventListener("load", () => {
+    setInterval(() => {
+        isBluetheme = !isBluetheme;
+        if (isBluetheme) {
+            blueTheme.style.opacity = '1';
+            redTheme.style.opacity = '0'
+        }
+        else {
+            blueTheme.style.opacity = '0'
+            redTheme.style.opacity = '1'
+        }
+    }, 10000)
+
+
+})
 
 nameBox.addEventListener("click", () => {
     modal.style.animation = "background-in 0.5s";
