@@ -22,8 +22,6 @@ window.addEventListener("load", () => {
             redTheme.style.opacity = '1'
         }
     }, 10000)
-
-
 })
 
 nameBox.addEventListener("click", () => {
